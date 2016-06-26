@@ -16,7 +16,7 @@ public class JunitBase {
     @BeforeClass
     public static void setUp(){
         try{
-            context = new ClassPathXmlApplicationContext(new String[] {"spring/spring-config-dubbo-provider.xml"});
+            context = new ClassPathXmlApplicationContext(new String[] {"spring-config.xml"});
         }catch (Exception e){
             e.printStackTrace();
         }
